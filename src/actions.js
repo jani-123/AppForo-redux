@@ -14,8 +14,8 @@ export const addList = (user,opinion) => {
 
 export const deleteList = (id) => {
   let lists = [...store.getState().list];
-  let exit = lists.filter(item => item.id !== id);
+  lists = lists.filter(item => item.id == id);
   store.setState({
-    list: exit
-  })
+    list: lists
+  });
 }
