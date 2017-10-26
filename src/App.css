@@ -32,7 +32,36 @@
 }
 .cajatext{
   display: inline-block;
+  font-family: 'Indie Flower', cursive;
 }
 .cajaimg{
   display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  margin-right: 20px;
+}
+.formulario{
+  border-color: #f1e8e8;
+  border-radius: 5px;
+  border: solid;
+  padding: 30px;
+  margin-top: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+.form-control{
+  margin-bottom: 10px;
+}
+h3,h2{
+  font-family: 'Indie Flower', cursive;
+}
+ul{
+  list-style: none;
+}
+hr{
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.comentario{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
 }

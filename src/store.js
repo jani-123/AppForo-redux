@@ -3,12 +3,12 @@ import createStore from 'redux-zero';
 const LISTCOMMENT = [
    {
       id: 0,
-      name:'@JuanPerez',
+      name:'JuanPerez',
       comment: 'me gusta la pagina'
    },
    {
     id: 1,
-    name:'@Maricielo',
+    name:'Maricielo',
     comment: 'Esta pagina es super!!!'
  }
 ];

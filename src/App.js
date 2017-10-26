@@ -12,7 +12,7 @@ const App = ({ list }) => {
   const listsComments = list.map((item, index) => {
     return (
       <li key={index}>
-        <div>
+        <div className="comentario">
           <div className="cajaimg">
             <img
               src="https://image.freepik.com/iconos-gratis/buscar-simbolo-de-interfaz-de-usuario_318-65798.jpg"
@@ -20,11 +20,11 @@ const App = ({ list }) => {
             />
           </div>
           <div className="cajatext">
-            {item.name}
-            <hr />
+            @{item.name}
+            <hr className="linea"/>
             {item.comment}
             <div>
-              <button onClick={onClick} id={index}>Delete comment</button>
+              <button className="btn btn-link" onClick={onClick} id={index}>Delete comment</button>
             </div>
           </div>
         </div>
@@ -41,7 +41,8 @@ const App = ({ list }) => {
   return (
     <div className="container">
       <div className="row">
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="formulario">
+          <h3>Foro-Comment</h3>
           <input
             type="text"
             className="form-control"
@@ -58,7 +59,7 @@ const App = ({ list }) => {
           />
           <button
             type="submit"
-            className="btn"
+            className="btn btn-lg btn-success"
             id="btnGuardar"
             value="Guardar Datos"
           >
